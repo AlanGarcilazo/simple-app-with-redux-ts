@@ -9,7 +9,8 @@ const Logout = () => {
     const dispatch = useDispatch()
 
     const LogOut = () => {
-       
+       clearLocalStorage(UserKey);
+       navigate(PublicRoutes.LOGIN, {replace:true})
     }
 
     return ( <>
